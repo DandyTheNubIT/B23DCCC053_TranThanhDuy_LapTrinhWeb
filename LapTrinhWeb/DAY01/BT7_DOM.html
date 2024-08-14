@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>A</p>
+    <p>B</p>
+    <p>C</p>
+    <p>D</p>
+    <p>E</p>
+    <p>F</p>
+    <p>G</p>
+    <p>H</p>
+<script>
+	var a = document.getElementsByTagName("p");
+	for (var i = 0; i < a.length; i = i + 1){
+        a[i].textContent = "Updated paragraph";
+    }
+</script>
+</html>
