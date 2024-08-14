@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+    </ul>
+    <script>
+        var a = document.createElement("li");
+        var b = document.createTextNode("Nội dung của phần tử mới");
+        a.appendChild(b);
+        var list = document.getElementById("list");
+        list.appendChild(a);
+    </script>
+</body>
+</html>
