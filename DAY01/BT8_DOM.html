@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bảng Động</title>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div id="table-container"></div>
+
+<script>
+var table = document.createElement("table");
+var tbody = document.createElement("tbody");
+
+for (var i = 0; i < 3; i++) {
+    var row = document.createElement("tr")
+    for (var j = 0; j < 3; j++) {
+        var cell = document.createElement("td");
+        var cellText = document.createTextNode("Say something");
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+    }
+
+    tbody.appendChild(row);
+}
+
+table.appendChild(tbody);
+
+var tableContainer = document.getElementById("table-container");
+tableContainer.appendChild(table);
+</script>
+
+</body>
+</html>

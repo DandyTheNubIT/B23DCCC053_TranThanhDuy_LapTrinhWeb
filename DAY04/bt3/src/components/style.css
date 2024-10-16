@@ -1,0 +1,91 @@
+
+.ToDoList {
+    margin-left: 10px;
+}
+
+/* Header Styles */
+.ToDoList h1 {
+    text-align: left;
+    margin: 0;
+}
+
+/* ToDoItem Styles */
+.ToDoItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.ItemContent {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.ToDoItem .Title {
+    font-size: 14px;
+    text-align: left;
+}
+
+.ToDoItem .DueDate {
+    font-size: 12px;
+    text-align: left;
+}
+.Action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.Action svg {
+    font-size: 20px; /* Tăng kích thước biểu tượng */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Action svg:hover {
+    color: #d1453b;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-task input[type="text"] {
+    margin-right: 10px;
+}
+
+.add-task input[type="date"] {
+    margin-left: 5px;
+}
+
+/* Checkbox Styles */
+.ToDoItem input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.ToDoItem input[type="checkbox"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.ToDoItem input[type="checkbox"]:checked::before {
+    content: "\2713";
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
